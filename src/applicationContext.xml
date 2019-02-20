@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+       <!--<context:component-scan base-package="com.java1824.spring.demo1"/>-->
+       <!--<bean id="persons" class="com.java1824.spring.demo02.Persons"></bean>-->
+       <!--<bean id="adao" class="com.java1824.spring.demo3.ADAO"></bean>-->
+       <!--<bean id="aAdvice" class="com.java1824.spring.demo3.AAdvice"></bean>-->
+       <!--<bean class="org.springframework.aop.framework.">-->
+
+       <!--</bean>-->
+       <!--<bean id="aDaopoxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+              <!--<property name="target" ref="adao"></property>-->
+              <!--<property name="proxyTargetClass" value="true"></property>-->
+              <!--<property name="interceptorNames" value="aAdvice"></property>-->
+       <!--</bean>-->
+       <aop:aspectj-autoproxy/>
+       <context:component-scan base-package="com.java1824.spring.demo4"/>
+
+
+</beans>
